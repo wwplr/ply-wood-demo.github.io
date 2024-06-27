@@ -479,6 +479,12 @@
     text-align: center;
     margin-top: 15px;
   }
+  .footer .container  {
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    padding: 0;
+  }
   
   .footer h4 {
     margin-bottom: 10px;
@@ -493,27 +499,41 @@
     color: #fff;
   }
   
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
   .footer i {
     font-size: 1.5rem;
     margin-right: 1px;
   }
   
   .footer-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 20px;
-    justify-content: center;
+    display: inline-flex;
+    justify-content: space-between;
     align-items: center;
+    text-align: left;
+    padding: 0;
   }
   
+  .footer-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
+  }
+  
+  .footer-grid-container div {
+    display: block;
+    padding: 0;
+  }
   
   .footer-logo {
     justify-content: center;
-    align-items: center;
+    padding: 0;
+    max-width: 325px;
   } 
   
   .footer-logo img {
-    max-width: 325px;
     border-radius: 8px;
   } 
   
@@ -565,7 +585,7 @@
     border-radius: 10px;
     cursor: pointer;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.25s;
     padding: 10px 20px;
     margin-right: 10px;
   }
